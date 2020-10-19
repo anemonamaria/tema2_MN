@@ -1,0 +1,30 @@
+Moraru Anemona-Maria 
+313CC
+Tema 2 -Page Rank- Mai 2020
+
+
+Implementarea temei a durat aproximativ 25 de ore.
+
+In realizarea acesteai teme m-am folosit de scheletele functiilor primite
+in arhiva Temei 2. Pe langa aceste functii m-am folosit si de o functie realizata
+in cadrul laboratoarelor "SST" care imi returneaza rezultatul unui sistem superior
+triunghiular. Tin sa mentionez ca o parte din algoritmul Gram-Schmidt utilizat
+in functia "PR_INV" a fost preluat din cadrul laboratoarelor.
+
+In implementarea functiei "PageRank" am folosit functiile "Iterative", "Algebraic" si "Apartenenta". Creez matricea R in care sunt retinute valorile in urma apelarii functiilor mentionate deja. Elementele din matricea R le sortez crescator in 
+functie de a doua coloana, iar daca se vor gasi elemente egale, vor fi sortate in
+functe de a treia coloana si apoi de prima coloana. La final valorile vor fi 
+printate intr-un fisier creat prin lipirea numelui fisierului de intrare cu 
+extensia ".out".
+
+In implementarea functiei "Iterative" se citesc valorile din fisierul de intrare 
+si se realizeaza matricea de adiacenta, punand zero pe digonala principala deoarece
+faptul ca o pagina are link catre ea insasi nu ne ajuta in realizarea algoritmului
+iterative. Acest algoritm se va realiza pana cand rezultatul va fi mai mic decat
+eps.
+
+Implementarea functiei "Algebraic" este la fel cu cea a functiei precedente, diferenta fiind facuta de utilizarea functiei de aflare a inversei "PR_INV".
+
+"Apartenenta" atribuie valori in functie de caz. 
+
+
